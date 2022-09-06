@@ -1,0 +1,12 @@
+<GridLayout rows="*,auto">
+  <GridLayout row="0">
+    <ScrollView>
+      <ListView [items]="items">
+        <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+          <Label [text]="item.value" style="font-size: 16;"></Label>
+        </ng-template>
+      </ListView>
+    </ScrollView>
+  </GridLayout>
+  <Button row="1" text="CLose me!" (tap)="onClose()"></Button>
+</GridLayout>
